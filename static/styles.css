@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+form p {
+  margin-bottom: 15px;
+}
+
+form input[type="submit"] {
+  padding: 5px 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}

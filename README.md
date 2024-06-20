@@ -1,2 +1,1 @@
-# to-do-app
-The web application to manage a simple to-do list that requires users to log in. The application allow users to register, log in, add, edit, delete and view tasks. Tasks are assigned to specific users who can only manage their own tasks.
+[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=15293172)

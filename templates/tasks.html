@@ -1,0 +1,27 @@
+{% extends "base.html" %} {% block title %}My Tasks{% endblock %} {% block
+content %}
+<h2>My Tasks</h2>
+<a class="btn btn-primary" href="{{ url_for('tasks.new_task') }}"
+  >Add New Task</a
+>
+<ul class="list-group mt-3">
+  {% for task in tasks %}
+  <li class="list-group-item">
+    <h3>{{ task.title }}</h3>
+    <p>{{ task.description }}</p>
+    <a
+      class="btn btn-secondary"
+      href="{{ url_for('tasks.edit_task', task_id=task.id) }}"
+      >Edit</a
+    >
+    <form
+      action="{{ url_for('tasks.delete_task', task_id=task.id) }}"
+      method="POST"
+      class="d-inline"
+    >
+      <button type="submit" class="btn btn-danger">Delete</button>
+    </form>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}
